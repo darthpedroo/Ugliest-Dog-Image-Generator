@@ -46,15 +46,6 @@ defineExpose({ result })
     font-family: 'Rubik', sans-serif;
 }
 
-
-/* Extra small devices (≥0px) */
-@media (min-width: 300px) {
-  img{
-    max-height:300px;
-    max-width:300px;
-  }
-}
-
 /* Small devices (≥576px) */
 @media (min-width: 576px) {
   img{
