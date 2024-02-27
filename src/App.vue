@@ -26,14 +26,14 @@ defineExpose({ result })
   <main>
     <div class="container-fluid">
       <div class="row">
-        <h1 class="text-center col-10 img-fluid mx-auto my-5 custom-font">UGLIEST DOG IMAGE GENERATOR</h1>
+        <h1 class="col-lg-12 col-md-10 col-sm-6 text-center mx-auto my-2 custom-font">UGLIEST DOG IMAGE GENERATOR</h1>
       </div>
       <div class="row">
-        <img class="col-10 img-fluid mx-auto" :src="result"  alt="">
+        <img class="col-lg-6 col-md-8 col-sm-10 col-6 mx-auto" :src="result" alt="">
       </div>
- 
+
       <div class="row">
-        <button v-on:click="fetchData" type="button" class="btn btn-primary my-5 mx-auto col-10 custom-font"> OTRO PERRITO</button>
+        <button v-on:click="fetchData" type="button" class="col-lg-6 col-md-8 col-sm-10 col-6 btn btn-primary my-2 mx-auto custom-font"> OTRO PERRITO</button>
       </div>
 
     </div>
@@ -46,4 +46,46 @@ defineExpose({ result })
     font-family: 'Rubik', sans-serif;
 }
 
+
+/* Extra small devices (≥0px) */
+@media (min-width: 300px) {
+  img{
+    max-height:300px;
+    max-width:300px;
+  }
+}
+
+/* Small devices (≥576px) */
+@media (min-width: 576px) {
+  img{
+    max-height:576px;
+    max-width:576px;
+  }
+}
+
+/* Medium devices (≥768px) */
+@media (min-width: 768px) {
+  img{
+    max-height:768px;
+    max-width:768px;
+  }
+
+}
+
+/* Large devices (≥992px) */
+@media (min-width: 992px) {
+  img{
+    max-height:992px;
+    max-width:992px;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  img{
+    max-height:992px;
+    max-width:992px;
+  }
+  
+}
 </style>
