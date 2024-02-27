@@ -23,16 +23,27 @@ defineExpose({ result })
 </script>
 
 <template>
-
   <main>
-    <h1>UGLIEST DOG IMAGE GENERATOR</h1>
-    <img :src="result"  alt="" width="300px" height="300px">
-    <button v-on:click="fetchData"> Otro Perrito</button>
-    
+    <div class="container-fluid">
+      <div class="row">
+        <h1 class="text-center col-10 img-fluid mx-auto my-5 custom-font">UGLIEST DOG IMAGE GENERATOR</h1>
+      </div>
+      <div class="row">
+        <img class="col-10 img-fluid mx-auto" :src="result"  alt="">
+      </div>
+ 
+      <div class="row">
+        <button v-on:click="fetchData" type="button" class="btn btn-primary my-5 mx-auto col-10 custom-font"> OTRO PERRITO</button>
+      </div>
+
+    </div>
+  
   </main>
 </template>
 
 <style scoped>
-
+.custom-font {
+    font-family: 'Rubik', sans-serif;
+}
 
 </style>
