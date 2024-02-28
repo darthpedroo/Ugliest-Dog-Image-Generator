@@ -26,14 +26,14 @@ defineExpose({ result })
   <main>
     <div class="container-fluid">
       <div class="row">
-        <h1 class="col-lg-12 col-md-10 col-sm-6 text-center mx-auto my-2 custom-font">UGLIEST DOG IMAGE GENERATOR</h1>
+        <h1 class="col-lg-12 col-md-10 col-sm-10 text-center mx-auto my-2 custom-font">UGLIEST DOG IMAGE GENERATOR</h1>
       </div>
       <div class="row">
-        <img class="col-lg-6 col-md-8 col-sm-10 col-6 mx-auto" :src="result" alt="">
+        <img class="col-lg-6 col-md-8 col-sm-10 col-10 mx-auto" :src="result" alt="">
       </div>
 
       <div class="row">
-        <button v-on:click="fetchData" type="button" class="col-lg-6 col-md-8 col-sm-10 col-6 btn btn-primary my-2 mx-auto custom-font"> OTRO PERRITO</button>
+        <button v-on:click="fetchData" type="button" class="col-lg-6 col-md-8 col-sm-10 col-10 btn btn-primary my-2 mx-auto custom-font"> OTRO PERRITO</button>
       </div>
 
     </div>
