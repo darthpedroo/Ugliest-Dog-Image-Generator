@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Ugliest-Dog-Imae-Generator/',
+  base: '/Ugliest-Dog-Image-Generator/',
   plugins: [
     vue(),
   ],
