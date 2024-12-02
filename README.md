@@ -1,30 +1,56 @@
 # Ugliest Dog Image Generator
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+Esta es una aplicación que muestra fotos de perros
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Customize configuration
+## Objetivo
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+El objetivo de este proyecto era aprender VUE y como hostear una web en [github pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
 
-## Project Setup
+## Demo
+![image](https://github.com/user-attachments/assets/ef952079-ecba-4c14-8a5e-795003f47d2c)
 
-```sh
-npm install
+Esta aplicacion se encuentra [aca](https://darthpedroo.github.io/Ugliest-Dog-Image-Generator/)
+ 
+## Instalación
+
+### Clona el proyecto
+
+#### Con https: 
+```bash
+https://github.com/darthpedroo/Ugliest-Dog-Image-Generator.git
 ```
 
-### Compile and Hot-Reload for Development
+#### Con ssh:
+```bash
+git@github.com:darthpedroo/Ugliest-Dog-Image-Generator.git
+```
 
-```sh
+#### Instala las dependencias 
+
+```bash
+npm install
+``` 
+
+#### Ejecución
+
+```bash
 npm run dev
 ```
+Resultado esperado: 
 
-### Compile and Minify for Production
-
-```sh
-npm run build
+```bash
+Local:   http://localhost:5173/Ugliest-Dog-Image-Generator/
 ```
-# Ugliest-Dog-Imae-Generator
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Tests aren't required but they are appreciated ! 
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
