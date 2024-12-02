@@ -26,57 +26,42 @@ defineExpose({ result })
   <main>
     <div class="container-fluid">
       <div class="row">
-        <h1 class="col-lg-12 col-md-10 col-sm-10 text-center mx-auto my-2 custom-font">UGLIEST DOG IMAGE GENERATOR</h1>
+        <h1 class="col-12 text-center mx-auto my-2 custom-font">UGLIEST DOG IMAGE GENERATOR</h1>
       </div>
       <div class="row">
-        <img class="col-lg-6 col-md-8 col-sm-10 col-10 mx-auto" :src="result" alt="">
+        <!-- Image with responsive size -->
+        <img class="col-12 mx-auto my-2" :src="result" alt="" style="max-width: 100%; height: auto; width: 90%; max-width: 500px; object-fit: cover;">
       </div>
 
       <div class="row">
-        <button v-on:click="fetchData" type="button" class="col-lg-6 col-md-8 col-sm-10 col-10 btn btn-primary my-2 mx-auto custom-font"> OTRO PERRITO</button>
+        <!-- Button with the same width as the image -->
+        <button v-on:click="fetchData" type="button" class="col-12 col-md-8 btn btn-primary my-2 mx-auto custom-font" style="width: 90%; max-width: 500px;"> OTRO PERRITO</button>
       </div>
-
     </div>
-  
   </main>
 </template>
 
 <style scoped>
-.custom-font {
-    font-family: 'Rubik', sans-serif;
+/* Ensures that the image's width is flexible and adjusts with screen size */
+img {
+  max-width: 100%;
+  height: auto;
+  width: 90%;
+  max-width: 500px;
+  object-fit: cover; /* Ensures the image scales without distorting */
 }
 
-/* Small devices (≥576px) */
-@media (min-width: 576px) {
-  img{
-    max-height:576px;
-    max-width:576px;
+/* Optional: Custom font size for smaller screens */
+@media (max-width: 768px) {
+  .custom-font {
+    font-size: 1.5rem;
   }
 }
 
-/* Medium devices (≥768px) */
-@media (min-width: 768px) {
-  img{
-    max-height:768px;
-    max-width:768px;
+@media (max-width: 576px) {
+  .custom-font {
+    font-size: 1.25rem;
   }
-
-}
-
-/* Large devices (≥992px) */
-@media (min-width: 992px) {
-  img{
-    max-height:992px;
-    max-width:992px;
-  }
-}
-
-/* Extra large devices (≥1200px) */
-@media (min-width: 1200px) {
-  img{
-    max-height:992px;
-    max-width:992px;
-  }
-  
 }
 </style>
+
